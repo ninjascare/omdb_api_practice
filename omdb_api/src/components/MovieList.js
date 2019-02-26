@@ -10,7 +10,7 @@ export default class MovieList extends Component {
 
   componentDidMount() {
     const key = "805b29cc";
-    axios.get(`http://www.omdbapi.com/?s=Avengers&apikey=${key}`).then(res => {
+    axios.get(`http://www.omdbapi.com/?s=avengers&apikey=${key}`).then(res => {
       console.log(res.data.Search);
       this.setState({
         movieList: res.data.Search
