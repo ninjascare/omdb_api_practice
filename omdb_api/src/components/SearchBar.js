@@ -4,12 +4,15 @@ export default class SearchBar extends Component {
   render() {
     return (
       <div>
-        <input
-          type="text"
-          name="search"
-          id="search"
-          placeholder="Enter title to search"
-        />
+        <form>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Enter title to search"
+          />
+          <button>Search</button>
+        </form>
       </div>
     );
   }
