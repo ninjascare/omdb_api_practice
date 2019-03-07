@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import SearchBar from "./SearchBar";
 import "../App.css";
 import axios from "axios";
 import { DebounceInput } from "react-debounce-input";
@@ -9,8 +8,7 @@ export default class MovieList extends Component {
     movieList: [],
     searchInput: {
       title: ""
-    },
-    typingTimeout: 0
+    }
   };
 
   handleChange = e => {
@@ -51,7 +49,6 @@ export default class MovieList extends Component {
             placeholder="Enter title to search"
           />
         </form>
-        {/* <SearchBar {...this.props} /> */}
         {moviePoster}
       </div>
     );
