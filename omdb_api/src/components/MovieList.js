@@ -6,9 +6,7 @@ import { DebounceInput } from "react-debounce-input";
 export default class MovieList extends Component {
   state = {
     movieList: [],
-    searchInput: {
-      title: ""
-    }
+    searchInput: ""
   };
 
   handleChange = e => {
@@ -45,7 +43,7 @@ export default class MovieList extends Component {
             type="text"
             name="title"
             id="search"
-            value={this.state.searchInput.title}
+            value={this.state.searchInput}
             placeholder="Enter title to search"
           />
         </form>
