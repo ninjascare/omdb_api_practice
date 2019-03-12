@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../App.css";
 import axios from "axios";
 import { DebounceInput } from "react-debounce-input";
+import { Link } from "react-router-dom";
 
 export default class MovieList extends Component {
   state = {
@@ -28,7 +29,9 @@ export default class MovieList extends Component {
   render() {
     var moviePoster = this.state.movieList.map((movie, i) => (
       <div key={i}>
-        <img src={movie.Poster} alt="eeads" />
+        <Link to="movies/:movieId">
+          <img src={movie.Poster} alt="eeads" />
+        </Link>
       </div>
     ));
 

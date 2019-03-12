@@ -13,7 +13,7 @@ class App extends Component {
 
             <Route exact path="/movies/:movieId" component={SingleMovie} />
             {/* ⬆️ The top Route is a testing route so I might not use it ⬆️ */}
-            
+
             <Route path="/" component={HomePage} />
           </Switch>
         </Router>
