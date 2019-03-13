@@ -23,10 +23,33 @@
   color: #61dafb;
 }
 
+.moviePosters {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+input {
+  display: inline-block;
+  width: 50%;
+  height: 3vh;
+  text-align: center;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 24px;
+  color: blue;
+  text-emphasis: bold;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

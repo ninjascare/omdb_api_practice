@@ -28,17 +28,18 @@ export default class MovieList extends Component {
 
   render() {
     var moviePoster = this.state.movieList.map((movie, i) => (
-      <div key={i}>
+      <div className="moviePosters" key={i}>
         <Link to="movies/:movieId">
           <img src={movie.Poster} alt="eeads" />
         </Link>
+        <h3>({movie.Year})</h3>
       </div>
     ));
 
     return (
       <div className="App">
         <h1>Omdb Searcher</h1>
-        <form>
+        <form id="searchBar">
           <DebounceInput
             minLength={2}
             debounceTimeout={1000}
@@ -47,7 +48,7 @@ export default class MovieList extends Component {
             name="title"
             id="search"
             value={this.state.searchInput}
-            placeholder="Enter title to search"
+            placeholder="Enter movie title to search"
           />
         </form>
         {moviePoster}
