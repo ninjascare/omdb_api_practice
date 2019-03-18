@@ -41,7 +41,7 @@
 
 
 
-.header {
+.header { 
   grid-area: header;
   /* height: 100%; */
   color: rgb(18, 62, 90);
