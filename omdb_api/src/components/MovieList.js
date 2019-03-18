@@ -54,7 +54,7 @@ export default class MovieList extends Component {
             placeholder="Enter movie title to search"
           />
         </div>
-        {moviePoster}
+        <div className="imgs"> {moviePoster}</div>
       </div>
     );
   }
