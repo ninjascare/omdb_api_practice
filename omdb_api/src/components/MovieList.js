@@ -31,7 +31,7 @@ export default class MovieList extends Component {
       <div key={i}>
         <div className="moviePosters">
           <Link to="movies/:movieId">
-            <img src={movie.Poster} alt="eeads" />
+            <img src={movie.Poster} alt="POSTER IMAGE" />
           </Link>
           <h3>({movie.Year})</h3>
         </div>
