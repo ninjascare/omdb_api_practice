@@ -3,6 +3,7 @@ import "../App.css";
 import axios from "axios";
 import { DebounceInput } from "react-debounce-input";
 import { Link } from "react-router-dom";
+import ImageCard from "./ImageCard";
 
 export default class MovieList extends Component {
   state = {
@@ -31,9 +32,8 @@ export default class MovieList extends Component {
       <div key={i}>
         <div className="moviePosters">
           <Link to="movies/:movieId">
-            <img src={movie.Poster} alt="POSTER COVER" />
+            <ImageCard image={movie} />
           </Link>
-          <h3>({movie.Year})</h3>
         </div>
       </div>
     ));
@@ -41,6 +41,7 @@ export default class MovieList extends Component {
     return (
       <div className="App">
         <div className="header">
+
           <h1>Omdb Searcher</h1>
           <DebounceInput
             id="searchBar"
@@ -53,8 +54,9 @@ export default class MovieList extends Component {
             value={this.state.searchInput}
             placeholder="Enter movie title to search"
           />
+
         </div>
-        <div className="imgs"> {moviePoster}</div>
+          <div className="image-poster"> {moviePoster}</div>
       </div>
     );
   }
