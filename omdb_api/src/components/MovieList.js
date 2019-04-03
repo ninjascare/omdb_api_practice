@@ -41,7 +41,6 @@ export default class MovieList extends Component {
     return (
       <div className="App">
         <div className="header">
-
           <h1>Omdb Searcher</h1>
           <DebounceInput
             id="searchBar"
@@ -54,9 +53,8 @@ export default class MovieList extends Component {
             value={this.state.searchInput}
             placeholder="Enter movie title to search"
           />
-
         </div>
-          <div className="image-poster"> {moviePoster}</div>
+        <div className="image-poster"> {moviePoster}</div>
       </div>
     );
   }
