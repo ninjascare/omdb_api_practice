@@ -17,6 +17,7 @@ export default class MovieList extends Component {
     const newSearch = e.target.value;
     this.componentDidMount(newSearch);
   };
+  
   componentDidMount(input) {
     const key = "805b29cc";
     axios.get(`http://www.omdbapi.com/?apikey=${key}&s=` + input).then(res => {
