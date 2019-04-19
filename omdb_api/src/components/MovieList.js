@@ -11,6 +11,7 @@ export default class MovieList extends Component {
     searchInput: ""
   };
 
+  
   handleChange = e => {
     console.log("name", e.target.name);
     console.log("value", e.target.value);
